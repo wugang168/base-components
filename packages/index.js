@@ -1,6 +1,7 @@
 import button from "./button";
+import videoPlay from "./videoPlay";
 
-const components = [button];
+const components = [button, videoPlay];
 
 const install = function (Vue) {
   components.map((component) => {
@@ -16,4 +17,5 @@ if (typeof window !== "undefined" && window.Vue) {
 export default {
   install,
   button,
+  videoPlay,
 };

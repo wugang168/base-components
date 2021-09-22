@@ -1,11 +1,20 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <!-- <div id="nav">
       <my-button></my-button>
-    </div>
+      <my-videoplay class="my-video" :options="videoOptions"></my-videoplay>
+    </div> -->
     <router-view />
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {};
+  },
+};
+</script>
 
 <style>
 #app {
@@ -27,5 +36,10 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.my-video .video-js {
+  width: 600px;
+  height: 500px;
 }
 </style>
