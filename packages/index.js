@@ -14,6 +14,8 @@ if (typeof window !== "undefined" && window.Vue) {
   install(window.Vue);
 }
 
+export { dataTransition, dataTransitionArr } from "../ehlib/dataParser";
+
 export default {
   install,
   button,

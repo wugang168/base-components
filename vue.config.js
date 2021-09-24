@@ -11,6 +11,7 @@ module.exports = {
     config.module
       .rule("js")
       .include.add("/packages")
+      .include.add("/ehlib")
       .end()
       .use("babel")
       .loader("babel-loader")

@@ -2,12 +2,13 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import MyBaseComponent from "../packages";
+import MyBaseComponent, { dataTransition } from "../packages";
 
 Vue.config.productionTip = false;
 
 Vue.use(MyBaseComponent);
 
+console.log(dataTransition);
 new Vue({
   router,
   store,
